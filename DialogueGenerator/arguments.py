@@ -14,7 +14,7 @@ def get_train_args():
     parser.add_argument("--scheduler", default="y", choices=["y", "n"], type=str)
 
     parser.add_argument("--batch-size", default=32, type=int)
-    parser.add_argument("--ignore_index", default=-100, type=int)
+    parser.add_argument("--ignore-index", default=-100, type=int)
     parser.add_argument("--epoch", default=3, type=int)
     parser.add_argument("--warmup-ratio", default=0.1, type=float)
     parser.add_argument("--learning-rate", default=5e-5, type=float)
@@ -37,7 +37,7 @@ def get_inference_args():
     parser.add_argument("--seed", default=42, type=int)
 
     parser.add_argument("--batch-size", default=128, type=int)
-    parser.add_argument("--ignore_index", default=-100, type=int)
+    parser.add_argument("--ignore-index", default=-100, type=int)
 
     return parser.parse_args()
 
